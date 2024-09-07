@@ -1,4 +1,5 @@
-# ![PYTHON](https://via.placeholder.com/800x200/4CAF50/FFFFFF?text=PYTHON) ![images](https://github.com/user-attachments/assets/41cb8bd5-d4cd-4ce7-8f89-bfad2f9e7761)![images](https://github.com/user-attachments/assets/add3b0a7-0062-4488-9483-44092b7b7ab9)
+# ![Inserir um título](https://github.com/user-attachments/assets/b9049045-1d9a-4055-bd02-2b8cc6358ba0)
+
 
 Bem-vindo ao repositório de treinamento para maratonas de programação! Este projeto é dedicado a ajudar desenvolvedores a se prepararem para com
 petições de programação, como maratonas e hackathons, com foco em Python.
