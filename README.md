@@ -1,4 +1,5 @@
-![Inserir um título (1)](https://github.com/user-attachments/assets/3201ec4e-141b-48cf-bd7e-e7444ed58dae)
+
+![Inserir um título (2)](https://github.com/user-attachments/assets/aed4ef8f-3024-4d0b-a662-df141b30aa84)
 
 
 # Bem-vindo ao Repositório de Treinamento para Maratonas de Programação 
