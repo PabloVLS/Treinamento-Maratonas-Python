@@ -1,37 +1,49 @@
 while True:
-    y1 = 0
-    x1 = 0
-
-    a,b,c,x,y = map(int, input().split())
-    if a+b+c+x+y == 0:
+    a, b, c, x, y = map(int, input().split())
+    if a + b + c + x + y == 0:
         break
+
     cartas = sorted([a, b, c], reverse=True)
     maior = cartas[0]
     segundaMaior = cartas[1]
+    menor = cartas[2]
 
-    if x > cartas[0]:
-        x1 += 1
-    if x > cartas[1]:
-        x1 += 1
-    if x > cartas[2]:
-        x1 += 1
+    cartasPrincipe = sorted([x, y], reverse=True)
+    maiorPrincipe = cartasPrincipe[0]
+    segundaPrincipe = cartasPrincipe[1]
 
-    if y > cartas[0]:
-        y1 += 1
-    if y > cartas[1]:
-        y1 += 1
-    if y > cartas[2]:
-        y1 += 1
+    cartaUsada = set([a, b, c, x, y])
 
-
-    if y1 ==0 or x1 ==0:
-        print("-1")
-    else:
-        cartaUsada= set([a,b,c,x,y])
-        for carta in range(1,53):
-            if carta not in cartaUsada:
-                if carta>cartas[1]:
+    if maiorPrincipe > maior:
+        if segundaPrincipe > maior:
+            for carta in range(1, 53):
+                if carta not in cartaUsada:
                     print(carta)
                     break
+            else:
+                print("-1")
+        elif segundaPrincipe > segundaMaior:
+            for carta in range(1, 53):
+                if carta not in cartaUsada and carta > segundaMaior:
+                    print(carta)
+                    break
+            else:
+                print("-1")
+        else:
+            for carta in range(1, 53):
+                if carta not in cartaUsada and carta > maior:
+                    print(carta)
+                    break
+            else:
+                print("-1")
+
+    else:
+        if segundaPrincipe > segundaMaior:
+            for carta in range(1, 53):
+                if carta not in cartaUsada and carta > segundaMaior:
+                    print(carta)
+                    break
+            else:
+                print("-1")
         else:
             print("-1")
